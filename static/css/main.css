@@ -1,0 +1,183 @@
+@-webkit-keyframes bubble {
+	from {
+		top: 100%;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	to {
+		top: 0%;
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+@-moz-keyframes bubble {
+	from {
+		top: 100%;
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	to {
+		top: 0%;
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+@-o-keyframes bubble {
+	from {
+		top: 100%;
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	to {
+		top: 0%;
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+@-ms-keyframes bubble {
+	from {
+		top: 100%;
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	to {
+		top: 0%;
+		-ms-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes bubble {
+	from {
+		top: 100%;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	to {
+		top: 0%;
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+html {
+	font: 16px/1.75em "Open Sans", "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", "Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #63b4fb;
+}
+
+html, body, main {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	display: block;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+}
+
+section[data-page="home"] {
+	color: #ffffff;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-items: center;
+	justify-content: center;
+}
+
+section[data-page="home"] h1 {
+	margin: 0.5em auto;
+	font-size: 2.8em;
+	font-weight: 300;
+}
+
+section[data-page="home"] h2 {
+	margin: 0 auto;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.wrapper {
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.avatar {
+	width: 16em;
+	height: 16em;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.bubble-group {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+	position: absolute;
+	border-radius: 50%;
+	top: 100%;
+	background: #ffffff;
+	-webkit-animation: bubble 2s ease-in;
+	-moz-animation: bubble 2s ease-in;
+	-o-animation: bubble 2s ease-in;
+	-ms-animation: bubble 2s ease-in;
+	animation: bubble 2s ease-in;
+}
+
+.bubble-fast {
+	-webkit-animation: bubble 1s ease-in;
+	-moz-animation: bubble 1s ease-in;
+	-o-animation: bubble 1s ease-in;
+	-ms-animation: bubble 1s ease-in;
+	animation: bubble 1s ease-in;
+}
+
+.bubble-slow {
+	-webkit-animation: bubble 3s ease-in;
+	-moz-animation: bubble 3s ease-in;
+	-o-animation: bubble 3s ease-in;
+	-ms-animation: bubble 3s ease-in;
+	animation: bubble 3s ease-in;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 12px;
+	}
+}
